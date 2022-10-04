@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Album Shop</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/ae/2e/56/ae2e5651b74a00d5d31b8c6453fa3ebb.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body onload="loadData()">
+    <div id="main">
+        <div id="header">
+            <!-- Begin : Nav-->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#album">Album</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About us</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cart"><i class="cart-icon ti-shopping-cart"></i>
+                    <span 
+                     id="itemsCount">0</span></a></li>
+            </ul>
+            <!-- End : Nav-->
+
+            <!-- Begin : Search button-->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <!-- End : Search button-->
+
+
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">Welcome to The Album Shop</h2>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="album" class="content-section">
+                <h2 class="section-heading">ALBUM</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    Below are all of the June Record Store Day 2022 titles that we have available for purchase online. All in stock titles are available for delivery or collection in store. Please note that our introductory 10% discount is not applicable to Record Store Day purchases.
+                    All titles are strictly one per customer. Anybody ordering multiple copies will have their orders cut to one copy.
+                </p>
+
+                <div class="album-list">
+                    <div id="product-items">
+
+                    </div>
+                    
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+            <div id="cart" class="border-top content-section">
+                <h2 class="section-heading">CART</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    
+                </p>
+
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        </th>
+                    <tbody id="table-body">
+        
+                    </tbody>
+                </table>
+                
+                    <div class="clear"></div>
+                <button style="background-color: #000; box-shadow: 0 0 10px rgb(0 0 0 / 30%); color: #fff; padding: 10px 20px; float: right; border: none;" 
+                href="#" >Pay</button>
+
+            </div>
+
+            <div id="contact" class="contact-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">CONTACT</h2>
+                    <p class="section-sub-heading text-white">Fan? Drop a note!</p>
+                    <div class="row">
+                        <div class="col col-half contact-info">
+                            <p class="text-white"><i class="ti-location-pin"></i>  Danang, Vietnam</p>
+                            <p class="text-white "><i class="ti-mobile"></i>  Phone: +00 151515</p>
+                            <p class="text-white "><i class="ti-email"></i>  Email: mail@mail.co</p>
+                        </div>
+                        <div class="col col-half contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-half">
+                                        <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    </div>
+                                    <div class="col col-half">
+                                        <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-8">
+                                    <div class="col col-full">
+                                        <input type="email" name="" placeholder="Message" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <input class="form-submit-btn mt-8"  type="submit" value="SEND">
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="about" class="content-section">
+                <h2 class="section-heading">ABOUT US</h2>
+                <p class="section-sub-heading">Team member</p>
+                <div class="members-list">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/" target="_blank"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="ti-instagram"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="ti-pinterest"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="ti-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright">Batch 176 - This is footer</p>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    var listCartItems = [];
+    function loadData() {
+        var productList = [];
+        var stringDataFromLocalStorage = localStorage.getItem("product-items");
+        if (stringDataFromLocalStorage != null) {
+            productList = InitData();
+            //productList = JSON.parse(stringDataFromLocalStorage);
+        }
+        else {
+            productList = InitData();
+        }
+        
+        var productHtmlWrapper = document.getElementById("product-items");
+       // productHtmlWrapper.innerHTML = "";
+        var stringHtml = "";
+        for (var i = 0; i < productList.length; i++) {
+            stringHtml +=
+                `
+                <div class="album-item">
+                        <img src="./assets/img/${productList[i].Image}" alt="R&B" class="album-img">
+                        <div class="album-body">
+                            <h3 class="album-heading">${productList[i].ProductName}</h3>
+                            <p class="album-desc">Price: <strong>${productList[i].Price}$</strong></p>
+                            <button href="#" class="album-buy-btn" data-id="${productList[i].Id}">Add to Cart</button>
+
+                        </div>
+                </div>
+                `
+        }
+        productHtmlWrapper.innerHTML = stringHtml;
+        InitAddToCartEvent(productList);
+    }
+    /*.............*/
+    
+
+    function InitAddToCartEvent(productList) {
+        var addToCartBtns = document.getElementsByClassName("album-buy-btn");
+        // for (var i = 0; i < addToCartBtns.length; i++) {
+        //     console.log(addToCartBtns[i]);
+        // }
+
+        Array.from(addToCartBtns).forEach(btn => {
+            btn.addEventListener("click", function () {
+                let id = btn.getAttribute("data-id");
+                for (let j = 0; j < productList.length; j++) {
+                    if (productList[j].Id == id) {
+                        if (listCartItems != null && listCartItems.length > 0) {
+                            var check = false;
+                            for (let k = 0; k < listCartItems.length; k++) {
+                                if (listCartItems[k].Id == id) {
+                                    check = true;
+                                    listCartItems[k].Quantity += 1;
+                                }
+                            }
+                        }
+                        // đếm số lượng add to cart
+                        let numberCart = parseInt(document.getElementById("itemsCount").innerHTML);
+                        document.getElementById("itemsCount").innerText = numberCart + 1;
+                        //
+                        if (!check) {
+                            let tableBody = document.getElementById("table-body");
+                            tableBody.innerHTML +=
+                                `
+                                    <tr>
+                                        <td>${productList[j].Id}</td>
+                                        <td>${productList[j].ProductName}</td>
+                                        <td>${productList[j].Price}</td>
+                                        <td id="quantity-${productList[j].Id}">${1}</td>
+                                        <td id="total-${productList[j].Id}">${parseInt(productList[j].Price) * 1}</td>
+                                        
+                                    </tr>
+                                `
+                                
+                            listCartItems.push(productList[j]);
+                            // <td>${parseInt(productList[j].Price) * 1}</td>
+                            
+                            
+                            
+                            
+                        }
+                        else {
+                            let currentQuantity = parseInt(document.getElementById(`quantity-${id}`).innerHTML);
+                            document.getElementById(`quantity-${id}`).innerText = currentQuantity + 1;
+                            document.getElementById(`total-${id}`).innerText = (currentQuantity+1) * productList[j].Price;
+                            
+                            
+                        }
+
+                    }
+                }
+            });
+        });
+    }
+
+
+    function InitData() {
+        var stringData =
+            `
+        [
+            {
+                "Id": 1,
+                "ProductName": "R&B",
+                "Price": "1000",
+                "Image": "album1.gif",
+                "Quantity": 1
+            },
+            {
+                "Id": 2,
+                "ProductName": "Jazz",
+                "Price": "500",
+                "Image": "album2.gif",
+                "Quantity": 1
+            },
+            {
+                "Id": 3,
+                "ProductName": "Pop Music",
+                "Price": "200",
+                "Image": "album3.gif",
+                "Quantity": 1
+            }
+        ]`
+
+        localStorage.setItem("product-items", stringData);
+        return JSON.parse(stringData);
+    }
+    
+</script>
+
+</html>
